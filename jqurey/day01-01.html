@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day01-01</title>
+    <script src="jquery-1.11.3/jquery.min.js"></script>
+    <style>
+    .iframe{
+             border:1px solid #888888 ;font-size: 13px;
+    }
+    .tip{
+       background: #EEEEEE;display: none;font-size: 12px;
+    }
+    </style>
+    <script>
+        function btn_Click() {
+            var oTxtValue=document.getElementById("text1").value;
+            alert(oTxtValue);
+            var oRdoValue=(radio1.checked)?"男":"女";
+
+            var oChkValue=(checkbox1.checked)?"婚姻":"未婚";
+
+            document.getElementById("Tip").style.display="block";
+
+            document.getElementById("Tip").innerHTML=oTxtValue+"<br>"+oRdoValue+"<br>"+oChkValue;
+        }
+    </script>
+</head>
+<body>
+<div class="iframe">
+    <div class="title">请输入如下信息</div>
+        <div class="content">
+         姓名:   <input type="text" id="text1" class="txt"><br>
+         性别:   <input type="radio" id="radio1" value="男">男
+                 <input type="radio" id="radio2" value="女">女 <br>
+         婚否:   <input type="checkbox" id="checkbox1" ><br>
+            <input type="button" value="提交" id="btnSubmit" class="btn" onclick="btn_Click();"><br>
+        </div>
+<div id="Tip" class="tip"></div>
+</div>
+
+</body>
+</html>

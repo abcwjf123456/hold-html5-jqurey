@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>day01</title>
+    <script src="jquery-1.11.3/jquery.min.js"></script>
+    <style>
+        .iframe{
+            border: solid 1px #888;
+            font-size: 13px;}
+        .title{
+            padding: 6px;
+            background: #EEE;}
+        .content{
+            padding: 8px;
+            font-size: 12px;
+            text-align: center;
+            background: yellow;
+            display: none;}
+        .curcol{background: red;}
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $(".content").html("hi");
+            $(".title").click(function () {
+                $(this).addClass("curcol").next(".content").css("display","block");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="iframe">
+    <div class="title"></div>
+    <div class="content"></div>
+</div>
+
+</body></html>
