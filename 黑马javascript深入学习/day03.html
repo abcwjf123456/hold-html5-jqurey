@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<input type="text" value="" id="wb">
+<select id="fuhao">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<input type="text" value="" id="wb02">
+=
+<input type="text" value="" id="wb03">
+<input type="submit" value="计算" onclick="jsb()">
+</body>
+</html>
+<script>
+    function jsb() {
+    var wb00=document.getElementById('wb').value;
+    console.log(wb00)
+    var wb01=document.getElementById('wb02').value;
+    console.log(wb01)
+    var wb02=document.getElementById('wb03');
+    var fhao=document.getElementById('fuhao').value;
+    var webdz=parseFloat(wb01);
+    var webdz2=parseFloat(wb00);
+    if (fhao=='+') {
+        gg=webdz+webdz2;
+    }
+    else if(fhao=='-'){
+        gg=webdz-webdz2;
+    }
+    else if (fhao=='*') {
+            gg=webdz*webdz2;
+        }
+    else if (fhao=='/') {
+        gg=webdz/webdz2;
+    }
+    wb02.value=gg;
+
+
+    }
+</script>

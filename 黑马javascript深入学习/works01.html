@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实验报告6</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        div {
+            width: 100%;
+            height: 100vh;
+        }
+        .bj{
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+        }
+       .bj span {
+            display: inline-flex;
+            font-weight: bold;
+
+        }
+        .bj span p{
+            margin-right:30px ;
+            width: 100px;
+            height: 10px;
+        }
+        .bj span .h{
+            margin-top: 20px;
+        }
+        .bj .tj{
+            margin-left: 60%;
+        }
+        .bj .cz{
+            margin-left: 10px;
+        }
+        .bj span select{
+            width: 100px;
+            margin-top: 10px;
+        }
+        .bj span form{
+            margin-top: 10px;
+
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <img src="images/001.png">
+    <div class="bj">
+        <span><p>姓名：</p><input type="text" class="single01" maxlength="20" ></span><br>
+        <span><p class="h">性别：</p><form>
+            男性：
+            <input type="radio" checked="checked" name="Sex" value="male">
+            <br>
+            女性：
+            <input type="radio" name="Sex" value="female">
+        </form>
+        </span><br>
+        <span><p>所在地：</p><select name="city">
+            <option value="北京">北京</option>
+            <option value="上海">上海</option>
+            <option value="郑州">郑州</option>
+            <option value="重庆">重庆</option>
+        </select>
+        </span><br>
+        <span><p>QQ：</p><input type="text" class="single02" maxlength="20" ></span><br>
+        <span><p>E-mail：</p><input type="text" class="single03" maxlength="20"></span><br>
+        <span><p>请选择头像：</p><input type="text"><input type="file" />  </span><br>
+        <span><p>标题：</p><input type="text" maxlength="20"></span><br>
+        <span><p>留言内容：</p><textarea rows="5" cols="50">
+        </textarea>  </span><br>
+        <input type="submit" value="提交" class="tj"/>
+        <input type="reset" value="重置" class="cz" />
+
+    </div>
+
+</div>
+</body>
+</html>

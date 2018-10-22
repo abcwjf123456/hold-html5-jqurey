@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模块旋转</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overall {
+            display: flex;
+            margin-top: 30%;
+            flex-direction: column;
+            width: 3em;
+            height: 2em;
+            font-size: 8em;
+            /*background-color: #000;*/
+
+        }
+
+        .overall::before {
+            content: '';
+            width: 0.5em;
+            height: 0.5em;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            background: orangered;
+            animation: yuan 3s ease-in-out infinite;
+        }
+
+        .overall::after {
+            content: '';
+            width: 0.8em;
+            height: 0.5em;
+            background: orange;
+            animation: chuang 3s ease-in-out infinite;
+        }
+
+        @keyframes yuan {
+            20%, 80% {
+                transform: translateY(-0.5em);
+            }
+            50% {
+                transform: translateY(-0.1em);
+
+            }
+        }
+        @keyframes chuang {
+
+            50% {
+                transform: rotate(90deg);
+
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="overall"></div>
+</body>
+</html>

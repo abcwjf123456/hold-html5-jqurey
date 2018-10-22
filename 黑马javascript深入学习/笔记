@@ -1,0 +1,18 @@
+1.只有get--byid不是获取的是数组（集合），其他的获取的都是数组。
+2.  location.assign会产生历史纪录
+    location.reolace不会产生历史纪录
+3.绑定事件不需要在传入this
+
+4.加载事件简写方式：
+js:window.onload()
+jq:$(document).ready(function(){})
+//简写
+jq:$(function(){})
+js:把页面上的dom和资源加载完成之后执行
+jq：把页面上的dom加载完成之后执行
+
+5.类是函数数据类型的，实例是对象数据类型的
+
+6.原型链压根没懂所有原型链这块暂无笔记文件在day11
+
+

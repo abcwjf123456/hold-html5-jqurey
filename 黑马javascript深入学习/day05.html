@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+    <style>
+        span{
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>等待<span id="kk">5</span>秒后跳转</div>
+</body>
+</html>
+<script>
+window.onload=init;
+function init() {
+
+    window.setInterval("djs()",1000);
+
+
+
+}
+function tiaoz() {
+    location.replace('https://hao.360.cn/?src=bm');
+}
+
+
+function djs() {
+    var n =document.getElementById('kk');
+    var k =n.innerHTML;
+     n.innerHTML=k-1;
+    console.log(k);
+
+}
+
+</script>

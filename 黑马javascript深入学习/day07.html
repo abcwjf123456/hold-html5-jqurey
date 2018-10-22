@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预解释</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // <!--预解释无节操-->
+    //  if (!('num' in window)){
+    //     vnum=12;
+    // }
+    // console.log(num);
+//    预解释的时候只预解释=左边的，右边的是值，不参与预解释
+//    匿名函数之函数表达式：把函数定义的一小部分当作一个值赋值给我们的变量/元素的某一个事件
+//    window下的解释：var fun；
+//    fun；-》undefined\
+//     fun();Uncaught TypeError: fun is not a function
+//     var fun=function () {
+//         console.log('ok');
+//     }
+//     fun();
+//    这种函数只能在下面调用不能在上面调用不然会报错
+
+//    函数体return下面的代码虽然不执行但会进行预解释，return后面跟着的都是我们的返回值不进行预解释
+// 在js中变量名与函数名相同也算冲突
+//     var fun=12;
+    //     function fun() {
+    //         console.log('gh');
+    //     }
+    //
+
+
+
+
+    //先预解释fu=xxxxx之后被第二个fu重新预解释覆盖了第一个地址，虽然不用重新声明但可以进行赋值
+    // fu();-》=2
+    // function fn() {
+    //     console.log('1');
+    // }
+    // fu();-》=2
+    // var fu=10;-》fu=10
+    // fu();-》error
+    // function fn() {
+    //     console.log('2');
+    // }
+    // fu();
+//    只会执行两次然后报错
+</script>

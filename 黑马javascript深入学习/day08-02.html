@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+    <style>
+        div{
+            border: 2px solid red;
+            width: 100px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="div01">请点击<span id="span01">1</span></div>
+</body>
+</html>
+<script type="text/javascript">
+var wrap=document.getElementById('div01');
+var wrt=document.getElementById('span01');
+// 1.
+// // var cout=0;
+// wrap.onclick= function(){
+//   cout++;
+//   wrt.innerHTML= cout;
+// };
+//    弊端因为有一个私有变量没有被销毁所有会占一点点内存
+//   2.
+// wrap.onclick= function(){
+//
+//   // wrt.innerHTML= ++wrt.innerHTML;
+//   //  wrt.innerHTML++;
+// };
+// 弊端每次都需要将页面内容转化成字符串然后再相加，累加完在重新添加回去，当重新的添加的时候浏览器都要从新渲染一下
+//3
+// (function () {
+//     var cout=0;
+//     wrap.onclick= function(){
+//         cout++;
+//         wrt.innerHTML=cout;
+//     }
+//
+// }  )()//自执行函数私有变量不销毁
+//    4(推荐)
+    wrap.count=0;
+    wrap.onclick=function () {
+        wrt.innerHTML=++this.count;
+    }
+
+</script>

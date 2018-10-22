@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+       .wrap{
+           width: 800px;
+           height: 400px;
+           margin: 0 auto;
+           border: 2px solid darkblue;
+           position: relative;
+       }
+       .wrap img{
+           cursor: pointer;
+       }
+       .bt{
+           position: absolute;
+           right: 0;
+           top: 0;
+           list-style-type: none;
+
+       }
+        .bt li{
+            width: 30px;
+            height: 20px;
+            border: 2px solid red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--有bug-->
+<div class="wrap">
+    <img src="images/tup01.jpg" alt="" id="images" onmousemove="yr()" onmouseout="yc()">
+    <ul class="bt">
+        <li onmousemove="liyr(this)" onmouseout="liyc(this)" id="li1">1</li>
+        <li onmousemove="liyr(this)" onmouseout="liyc(this)" id="li2">2</li>
+        <li onmousemove="liyr(this)" onmouseout="liyc(this)" id="li3">3</li>
+        <li onmousemove="liyr(this)" onmouseout="liyc(this)" id="li4">4</li>
+    </ul>
+</div>
+
+</body>
+</html>
+<script>
+    window.onload=init();
+    var jsq;
+    function init() {
+        jsq=window.setInterval('dt()',1000);
+        var lig=document.getElementById('li1');
+        lig.style.background='#000';
+
+    }
+    var i=1;
+    var tup;
+    function dt() {
+        tup=document.getElementById('images');
+        i++;
+        if (i>4) {
+            i=0;
+            console.log('1');
+        }else {
+            tup.src='images/tup0'+i+'.jpg';
+            fn();
+            var lig=document.getElementById('li'+i);
+            lig.style.background='#000';
+
+
+        }
+
+    }
+    function yr() {
+        window.clearInterval(jsq);
+    }
+    function yc() {
+        jsq=window.setInterval('dt()',1000);
+    }
+     var zhi;
+    function liyr(e) {
+        e.style.background='#000';
+        zhi=parseInt(e.innerHTML);
+
+        tup.src='images/tup0'+zhi+'.jpg';
+
+        window.clearInterval(jsq);
+        i=zhi;
+
+
+    }
+    function liyc(e) {
+        e.style.background='#fff';
+        jsq=window.setInterval('dt()',1000);
+    }
+    function fn() {
+       for (var j=1;j<=4;j++){
+           var lig=document.getElementById('li'+j);
+           lig.style.background='#fff';
+       }
+    }
+</script>

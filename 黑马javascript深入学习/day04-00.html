@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <style>
+        div{
+            width: 100%;
+            height: 100px;
+            border:2px solid #000 ;
+            text-align: center;
+            font-size: 70px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="gh">时间</div>
+</body>
+</html>
+<script>
+window.onload=init();
+function init(){window.setInterval('hk()',1000);}
+
+
+    function hk() {
+        var idd=document.getElementById('gh');
+        var sj=new Date();
+        console.log(sj);
+        idd.innerHTML=sj.toLocaleTimeString();
+
+    }
+
+</script>

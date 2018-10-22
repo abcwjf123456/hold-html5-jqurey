@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this私有变量练习</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    var num =20;
+    var obj={
+        num:30,
+        fn:(function (num) {  //这个num=20因为要获取num=30需要通过obj.num调用
+            this.num*=3; //windown.num*=3 =60
+            num+=15;//num=35
+            var num=45;//num=45
+            return function () {
+                this.num*=4;//windown.num*=4 =240
+                num+=20;//45+20=65
+                console.log(num);
+            }
+        })(num)//通过obj.num调用num=30
+    };
+    var fn=obj.fn;
+    fn();//会保留私有变量
+    obj.fn();//所有num=65+20=85
+</script>

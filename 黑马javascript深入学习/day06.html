@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星星案例</title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 20px;
+            display: inline-block;
+            border: 1px solid red;
+        }
+        #d2{
+            height: 20px;
+
+
+            display: inline-block;
+
+
+        }
+    </style>
+</head>
+<body>
+<!--有bug未解决-->
+<input type="button" value="开始" onclick="star()">
+<input type="button" value="暂停" onclick="stopn()">
+<span id="sj"></span>
+<span id="d1"><span id="d2"></span></span>
+</body>
+</html>
+<script>
+    // window.onload=init;
+    var zt;
+    var cot=0;
+    var n =0;
+    var vb;
+    var dd;
+    function star() {
+        window.clearInterval(zt);
+        window.clearInterval(vb);
+        vb=window.setInterval('jrsj()',1000);
+        zt=window.setInterval('fu()',100);
+    }
+    function fu() {
+        var obj=document.createElement('img');
+        obj.src='images/tup05.png';
+        var w=Math.floor(Math.random()*80+10);
+        var x=Math.floor(Math.random()*500+500);
+        var y=Math.floor(Math.random()*500+100);
+        //添加事件
+        obj.onclick=gh;
+        obj.style.width=w+'px';
+        obj.style.position='absolute';
+        obj.style.top=y+'px';
+        obj.style.left=x+'px';
+
+        document.body.appendChild(obj);
+        cot++;
+        dd=document.getElementById('d2');
+        dd.style.width=cot*5+'px';
+        dd.style.background='red';
+        if (cot>=20){
+            window.clearInterval(zt);
+            window.clearInterval(vb);
+            alert('游戏结束');
+
+           location.reload();
+        }
+        function gh() {
+            this.parentNode.removeChild(this);
+            cot--;
+            dd.style.width=cout*5+'px';
+            dd.style.background='red';
+        }
+    }
+    function stopn() {
+
+       alert('暂停游戏');
+
+    }
+    function jrsj() {
+        var time=document.getElementById('sj');
+        time.innerHTML='时间'+n+'秒';
+        n++;
+    }
+</script>

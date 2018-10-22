@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数初认识</title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+    function fn(name,age) {
+        this.name=name;
+        this.age=age;
+        this.fun=function () {
+            console.log('1');
+        };
+
+    };
+    var gg=new fn('ff',16);
+    gg.fun();
+</script>

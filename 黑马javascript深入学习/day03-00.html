@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动</title>
+    <style>
+        #wrap{
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+        }
+    </style>
+</head>
+<body onmousemove="dj(event)">
+<div id="wrap">坐标0,0</div>
+</body>
+</html>
+<script>
+    function dj(e) {
+       var wrap=document.getElementById('wrap');
+       var x=e.clientX;
+       console.log(x);
+       var y=e.clientY;
+       wrap.innerHTML='坐标'+x+''+y;
+
+    }
+</script>

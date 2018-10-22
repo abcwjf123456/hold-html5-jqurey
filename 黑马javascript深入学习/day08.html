@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作用域与内存释放与销毁</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  function fn() {
+      var i=10;
+      return function (n) {
+          console.log(n+(++i));
+      }
+  }
+  var f=fn();//->将返回函数传给了变量f所以私有变量不会被销毁
+  f(10);//->21 i=11
+  f(20);//->32
+  fu()(10);//->21 没有将返回函数传给了变量f所以私有变量会被销毁
+  fu()(20);//->31
+</script>
