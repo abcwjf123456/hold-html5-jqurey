@@ -1,0 +1,8 @@
+<data>
+    <com name="name1">dddd
+        <hh name="name2">fgfg</hh>
+    </com>
+    <com>
+        <gg name="name4" name2="name6">gfg</gg>
+    </com>
+</data>
