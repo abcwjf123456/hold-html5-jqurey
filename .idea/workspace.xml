@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04f31185-72e0-48ff-87c4-7d687171d7d5" name="Default Changelist" comment="" />
+    <list default="true" id="04f31185-72e0-48ff-87c4-7d687171d7d5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/html5-and-jqurey.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html5-and-jqurey.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -11,22 +15,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/hold_html5_jqurey$test001.coverage" NAME="test001 Coverage Results" MODIFIED="1540263712760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python/day20" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-647882076">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="14" />
           <entry key="js" value="4" />
+          <entry key="py" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -35,11 +44,13 @@
           <entry key="HTML" value="14" />
           <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="567" />
+          <entry key="py" value="12" />
           <entry key="txt" value="14" />
         </counts>
       </usages-collector>
@@ -47,17 +58,29 @@
         <counts>
           <entry key="HTML" value="567" />
           <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python/day20/test001.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -72,6 +95,7 @@
         <option value="$PROJECT_DIR$/jqurey/jquery-1.11.3/jquery.min.js" />
         <option value="$PROJECT_DIR$/jqurey/day02-03.html" />
         <option value="$PROJECT_DIR$/jqurey/day02-00.html" />
+        <option value="$PROJECT_DIR$/python/day20/test001.py" />
       </list>
     </option>
   </component>
@@ -86,12 +110,30 @@
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyInterpreterInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -99,18 +141,22 @@
               <item name="hold-html5-jqurey" type="b2602c69:ProjectViewProjectNode" />
               <item name="hold-html5-jqurey" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hold-html5-jqurey" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hold-html5-jqurey" type="462c0819:PsiDirectoryNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -131,6 +177,35 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test001" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="html5-and-jqurey" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/python/day20" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python/day20/test001.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test001" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -161,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540204291656</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新">
+      <created>1540263741840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540263741840</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -179,20 +261,24 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3549107" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3600605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.32973805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49923548" weight="0.32911393" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4977064" weight="0.32911393" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4969743" weight="0.32819724" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49923548" weight="0.32911393" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50076455" side_tool="true" visible="true" weight="0.32819724" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.32819724" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -210,24 +296,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day03-00.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1053" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day02.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-790" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day03-00.html" />
+    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day03.html" />
+    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day02.html" />
+    <entry file="file://$PROJECT_DIR$/黑马javascript深入学习/day01.html" />
     <entry file="file://$PROJECT_DIR$/New File.html" />
     <entry file="file://$PROJECT_DIR$/New File_files/github-9ddb0f104fdb4def01f1dc9ba427120b.js" />
     <entry file="file://$PROJECT_DIR$/jqurey/day01-00.html">
@@ -271,6 +343,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python/day20/test001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
