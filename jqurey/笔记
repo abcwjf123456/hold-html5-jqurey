@@ -1,0 +1,79 @@
+1.:even
+  V1.0概述
+  匹配所有索引值为偶数的元素，从 0 开始计数
+2.:odd
+  概述
+  匹配所有索引值为奇数的元素，从 0 开始计数
+3.:eq(index)
+  概述
+  匹配一个给定索引值的元素
+  参数
+  indexNumberV1.0
+  从 0 开始计数
+4.:gt(index)
+  概述
+  匹配所有大于给定索引值的元素
+  参数
+  indexNumberV1.0
+  从 0 开始计数
+5.:lt(index)
+  概述
+  匹配所有小于给定索引值的元素
+  参数
+  indexNumberV1.0
+  从 0 开始计数
+6.:header
+  V1.2概述
+  匹配如 h1, h2, h3之类的标题元素
+  示例
+   描述:
+  给页面内所有标题加上背景色
+7.:not(selector)
+  概述
+  去除所有与给定选择器匹配的元素
+  在jQuery 1.3中，已经支持复杂选择器了（例如:not(div a) 和 :not(div,a)）
+
+  参数
+  selectorSelectorV1.0
+  用于筛选的选择器
+  示例
+   描述:
+  查找所有未选中的 input 元素
+8.:empty
+  V1.0概述
+  匹配所有不包含子元素或者文本的空元素
+  示例
+   描述:
+  查找所有不包含子元素或者文本的空元素
+9.:has(selector)
+  概述
+  匹配含有选择器所匹配的元素的元素
+  参数
+  selectorSelectorV1.1.4
+  一个用于筛选的选择器
+10.:parent
+  V1.0概述
+  匹配含有子元素或者文本的元素
+  示例
+   描述:
+  查找所有含有子元素或者文本的 td 元素
+11.[attribute]
+   概述
+   匹配包含给定属性的元素。注意，在jQuery 1.3中，前导的@符号已经被废除！如果想要兼容最新版本，只需要简单去掉@符号即可。
+   参数
+   attributeStringV1.0
+   属性名
+   示例
+    描述:
+   查找所有含有 id 属性的 div 元素
+
+   $("div[id]")
+   （所有的都一样与re有关）
+12.:nth-child
+   概述
+   匹配其父元素下的第N个子或奇偶元素
+   ':eq(index)' 只匹配一个元素，而这个将为每一个父元素匹配子元素。:nth-child从1开始的，而:eq()是从0算起的！可以使用:<br>nth-child(even)<br>:nth-child(odd)<br>:nth-child(3n)<br>:nth-child(2)<br>:nth-child(3n+1)<br>:nth-child(3n+2)
+
+   参数
+   indexNumberV1.1.4
+   要匹配元素的序号，从1开始

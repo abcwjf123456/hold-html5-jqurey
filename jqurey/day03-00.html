@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>attr</title>
+    <script src="jquery-1.11.3/jquery.min.js"></script>
+    <style>
+        body{
+            font-size: 12px;}
+        div{
+                float: left;
+                padding-left: 10px;}
+        img{
+            border: 1px solid #ccc;
+            padding: 3px;
+            float: left;
+        }
+
+
+
+    </style>
+    <script>
+        $(function () {
+           var strAlt = $("img").attr("src");
+           strAlt+="<br/><br/>"+$("img").attr("title");
+           $("divAlt").html(strAlt);
+        });
+    </script>
+</head>
+<body>
+<img src="image/jt002.png" alt="图片" title="hhh">
+<div id="divAlt"></div>
+</body>
+</html>
